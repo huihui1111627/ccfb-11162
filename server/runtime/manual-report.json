@@ -1,0 +1,515 @@
+{
+  "month": "2026-08",
+  "steps": [
+    {
+      "title": "步骤1 合并范围判定（控制权基础）",
+      "detail": "纳入 14 家：P、A1、A2、B1、C1、B2、B3、B4、C2、C3、D2、D3、E1、D1。\n· A1 华源华东科技有限公司：有效持股 80.00%，纳入合并\n· A2 华南智造有限公司：有效持股 45.00%，持股未过半但协议实质控制，纳入合并\n· B1 华源香港贸易有限公司：有效持股 100.00%，纳入合并\n· C1 华源欧洲装备 GmbH：有效持股 70.00%，纳入合并\n· F1 北方能源合营有限公司：不具控制权（联营），不纳入\n· B2 苏州精密部件有限公司：有效持股 72.00%，纳入合并\n· B3 杭州软件服务有限公司：有效持股 48.00%，持股未过半但协议实质控制，纳入合并\n· B4 华源越南制造有限公司：有效持股 60.00%，纳入合并\n· C2 佛山模具科技有限公司：有效持股 36.00%，持股未过半但协议实质控制，纳入合并\n· C3 东莞表面处理有限公司：有效持股 24.75%，持股未过半但协议实质控制，纳入合并\n· D2 华源新加坡商贸 Pte Ltd：有效持股 100.00%，纳入合并\n· D3 华源德国销售 GmbH：有效持股 80.00%，纳入合并\n· E1 常州新材料有限公司：有效持股 50.40%，纳入合并\n· D1 西北材料有限公司：有效持股 19.20%，持股未过半但协议实质控制，纳入合并"
+    },
+    {
+      "title": "步骤2 外币报表折算（期末汇率/平均汇率）",
+      "detail": "资产负债按期末汇率、收入费用按平均汇率、实收资本/资本公积按历史汇率折算，折算差额轧差计入\"外币报表折算差额\"。本月折算差额合计 -10005.08 元（CNY 主体为 0，USD/EUR 主体产生）。"
+    },
+    {
+      "title": "步骤3 汇总个别报表数",
+      "detail": "将 14 家纳入主体折算后的 CNY 报表逐行加总，得到合并底稿\"个别数\"栏。"
+    },
+    {
+      "title": "步骤4a 内部应收应付抵消",
+      "detail": "双方金额折 CNY 后按较小者（核对一致部分）抵消，借 内部应付 / 贷 内部应收，本月抵消 182650.59 元；未抵消差额合计 6128.45 元保留挂账并在核对页标注原因（在途/汇率/漏记/金额差异）。"
+    },
+    {
+      "title": "步骤4b 内部销售收入与采购抵消",
+      "detail": "按核对一致金额抵消，借 内部销售收入 / 贷 营业成本，本月抵消 754962.23 元，双方差额列示原因不强行抵消。"
+    },
+    {
+      "title": "步骤5 未实现内部利润抵消（按存货留存比例）",
+      "detail": "对期末仍留存于买方的内部购入存货，按内含毛利抵消未实现利润，借 营业成本 / 贷 存货，本月 14145.89 元；逆流交易形成的部分按少数股东比例分摊。"
+    },
+    {
+      "title": "步骤6 长期股权投资与子公司权益抵消",
+      "detail": "借 子公司收购日实收资本/资本公积/留存收益 + 商誉（5340.00 元），贷 长期股权投资（合并成本）、贷 少数股东权益（收购日份额）；收购后净资产增量再按 NCI 比例重分类至少数股东权益。"
+    },
+    {
+      "title": "步骤7 少数股东损益",
+      "detail": "逐户按 子公司折算后净利润 × 少数股东比例 计算，逆流交易未实现利润按 NCI 比例冲减，本月少数股东损益合计 323021.06 元，单列于利润表。"
+    },
+    {
+      "title": "步骤8 利润表抵消事项结转留存收益",
+      "detail": "内部销售抵消对净利润净影响为 0（收入与成本同额对冲）；未实现利润抵消使净利润减少 14145.89 元，借 留存收益，保证资产负债表配平。"
+    }
+  ],
+  "manualRows": [
+    {
+      "line": "cash",
+      "label": "货币资金",
+      "individual": 877754.99,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 877754.99
+    },
+    {
+      "line": "ar",
+      "label": "应收账款（外部）",
+      "individual": 424611.78,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 424611.78
+    },
+    {
+      "line": "ic_ar",
+      "label": "内部应收",
+      "individual": 188779.04,
+      "elimDr": 0,
+      "elimCr": 182650.59,
+      "consolidated": 6128.45
+    },
+    {
+      "line": "inventory",
+      "label": "存货",
+      "individual": 468865.97,
+      "elimDr": 0,
+      "elimCr": 14145.89,
+      "consolidated": 454720.08
+    },
+    {
+      "line": "ppe",
+      "label": "固定资产",
+      "individual": 1995443.1,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 1995443.1
+    },
+    {
+      "line": "ic_investment",
+      "label": "长期股权投资（内部）",
+      "individual": 730222,
+      "elimDr": 0,
+      "elimCr": 482414,
+      "consolidated": 247808
+    },
+    {
+      "line": "other_assets",
+      "label": "其他资产",
+      "individual": 330205.87,
+      "elimDr": 5340,
+      "elimCr": 0,
+      "consolidated": 335545.87
+    },
+    {
+      "line": "total_assets",
+      "label": "资产总计",
+      "individual": 5015882.75,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 4342012.27
+    },
+    {
+      "line": "ap",
+      "label": "应付账款（外部）",
+      "individual": 347412.23,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 347412.23
+    },
+    {
+      "line": "ic_ap",
+      "label": "内部应付",
+      "individual": 182650.59,
+      "elimDr": 182650.59,
+      "elimCr": 0,
+      "consolidated": 0
+    },
+    {
+      "line": "other_liab",
+      "label": "其他负债",
+      "individual": 498857.63,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 498857.63
+    },
+    {
+      "line": "total_liab",
+      "label": "负债合计",
+      "individual": 1028920.45,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 846269.86
+    },
+    {
+      "line": "paid_in_capital",
+      "label": "实收资本",
+      "individual": 1335664,
+      "elimDr": 411400,
+      "elimCr": 0,
+      "consolidated": 924264
+    },
+    {
+      "line": "capital_reserve",
+      "label": "资本公积",
+      "individual": 303560,
+      "elimDr": 93500,
+      "elimCr": 0,
+      "consolidated": 210060
+    },
+    {
+      "line": "retained_earnings",
+      "label": "留存收益",
+      "individual": 2357743.38,
+      "elimDr": 701536.05,
+      "elimCr": 0,
+      "consolidated": 1656207.33
+    },
+    {
+      "line": "cta",
+      "label": "外币报表折算差额",
+      "individual": -10005.08,
+      "elimDr": 0,
+      "elimCr": 1139.15,
+      "consolidated": -8865.93
+    },
+    {
+      "line": "nci",
+      "label": "少数股东权益",
+      "individual": 0,
+      "elimDr": 0,
+      "elimCr": 714077.01,
+      "consolidated": 714077.01
+    },
+    {
+      "line": "total_equity",
+      "label": "所有者权益合计",
+      "individual": 3986962.3,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 3495742.41
+    },
+    {
+      "line": "revenue",
+      "label": "营业收入（外部）",
+      "individual": 9121130.29,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 9121130.29
+    },
+    {
+      "line": "ic_revenue",
+      "label": "内部销售收入",
+      "individual": 777776.99,
+      "elimDr": 754962.23,
+      "elimCr": 0,
+      "consolidated": 22814.76
+    },
+    {
+      "line": "cogs",
+      "label": "营业成本（外部）",
+      "individual": 5374709.02,
+      "elimDr": 14145.89,
+      "elimCr": 754962.23,
+      "consolidated": 4633892.68
+    },
+    {
+      "line": "ic_cogs",
+      "label": "内部销售成本",
+      "individual": 544444.06,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 544444.06
+    },
+    {
+      "line": "expenses",
+      "label": "期间费用",
+      "individual": 1315383.2,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 1315383.2
+    },
+    {
+      "line": "tax",
+      "label": "所得税费用",
+      "individual": 666086.18,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 666086.18
+    },
+    {
+      "line": "net_profit",
+      "label": "净利润",
+      "individual": 1998284.82,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 1984138.93
+    },
+    {
+      "line": "nci_pl",
+      "label": "少数股东损益",
+      "individual": 0,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 323021.06
+    },
+    {
+      "line": "parent_pl",
+      "label": "归属于母公司所有者的净利润",
+      "individual": 1998284.82,
+      "elimDr": 0,
+      "elimCr": 0,
+      "consolidated": 1661117.87
+    }
+  ],
+  "metrics": [
+    {
+      "name": "纳入合并主体数",
+      "value": 14,
+      "formula": "控制权判断：14家（含4月收购A2/C2，不含联营F1，D1处置月仍纳入）"
+    },
+    {
+      "name": "合并资产总计",
+      "value": 4342012.27,
+      "formula": "各资产行折算汇总 ± 抵消"
+    },
+    {
+      "name": "合并负债合计",
+      "value": 846269.86,
+      "formula": "各负债行折算汇总 ± 抵消"
+    },
+    {
+      "name": "合并所有者权益合计",
+      "value": 3495742.41,
+      "formula": "母公司权益 + 少数股东权益 + 折算差额"
+    },
+    {
+      "name": "配平差额(资产-负债-权益)",
+      "value": 0,
+      "formula": "应为 0"
+    },
+    {
+      "name": "少数股东损益合计",
+      "value": 323021.06,
+      "formula": "Σ子公司净利润×NCI% − 逆流URP×NCI%"
+    },
+    {
+      "name": "利润结转留存收益",
+      "value": -14145.89,
+      "formula": "利润表抵消事项对净利润的影响结转"
+    }
+  ],
+  "comparison": [
+    {
+      "line": "cash",
+      "label": "货币资金",
+      "manual": 877754.99,
+      "system": 877754.99,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ar",
+      "label": "应收账款（外部）",
+      "manual": 424611.78,
+      "system": 424611.78,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ic_ar",
+      "label": "内部应收",
+      "manual": 6128.45,
+      "system": 6128.45,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "inventory",
+      "label": "存货",
+      "manual": 454720.08,
+      "system": 454720.08,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ppe",
+      "label": "固定资产",
+      "manual": 1995443.1,
+      "system": 1995443.1,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ic_investment",
+      "label": "长期股权投资（内部）",
+      "manual": 247808,
+      "system": 247808,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "other_assets",
+      "label": "其他资产",
+      "manual": 335545.87,
+      "system": 335545.87,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "total_assets",
+      "label": "资产总计",
+      "manual": 4342012.27,
+      "system": 4342012.27,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ap",
+      "label": "应付账款（外部）",
+      "manual": 347412.23,
+      "system": 347412.23,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ic_ap",
+      "label": "内部应付",
+      "manual": 0,
+      "system": 0,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "other_liab",
+      "label": "其他负债",
+      "manual": 498857.63,
+      "system": 498857.63,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "total_liab",
+      "label": "负债合计",
+      "manual": 846269.86,
+      "system": 846269.86,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "paid_in_capital",
+      "label": "实收资本",
+      "manual": 924264,
+      "system": 924264,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "capital_reserve",
+      "label": "资本公积",
+      "manual": 210060,
+      "system": 210060,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "retained_earnings",
+      "label": "留存收益",
+      "manual": 1656207.33,
+      "system": 1656207.33,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "cta",
+      "label": "外币报表折算差额",
+      "manual": -8865.93,
+      "system": -8865.93,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "nci",
+      "label": "少数股东权益",
+      "manual": 714077.01,
+      "system": 714077.01,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "total_equity",
+      "label": "所有者权益合计",
+      "manual": 3495742.41,
+      "system": 3495742.41,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "revenue",
+      "label": "营业收入（外部）",
+      "manual": 9121130.29,
+      "system": 9121130.29,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ic_revenue",
+      "label": "内部销售收入",
+      "manual": 22814.76,
+      "system": 22814.76,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "cogs",
+      "label": "营业成本（外部）",
+      "manual": 4633892.68,
+      "system": 4633892.68,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "ic_cogs",
+      "label": "内部销售成本",
+      "manual": 544444.06,
+      "system": 544444.06,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "expenses",
+      "label": "期间费用",
+      "manual": 1315383.2,
+      "system": 1315383.2,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "tax",
+      "label": "所得税费用",
+      "manual": 666086.18,
+      "system": 666086.18,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "net_profit",
+      "label": "净利润",
+      "manual": 1984138.93,
+      "system": 1984138.93,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "nci_pl",
+      "label": "少数股东损益",
+      "manual": 323021.06,
+      "system": 323021.06,
+      "diff": 0,
+      "match": true
+    },
+    {
+      "line": "parent_pl",
+      "label": "归属于母公司所有者的净利润",
+      "manual": 1661117.87,
+      "system": 1661117.87,
+      "diff": 0,
+      "match": true
+    }
+  ],
+  "allMatch": true
+}

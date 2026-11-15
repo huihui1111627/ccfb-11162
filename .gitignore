@@ -16,3 +16,16 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# build output
+dist/
+web/dist/
+server/dist/
+shared/dist/
+
+# runtime data (seed + manual entries generated into runtime, but seed is committed)
+server/runtime/state.json
+
+# logs
+*.log
+.DS_Store

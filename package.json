@@ -1,0 +1,25 @@
+{
+  "name": "consolidation-system",
+  "private": true,
+  "version": "1.0.0",
+  "description": "集团合并报表系统：内部往来/交易抵消、外币折算、少数股东权益、合并底稿",
+  "workspaces": [
+    "shared",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "dev": "concurrently -n server,web -c blue,green \"npm:dev:server\" \"npm:dev:web\"",
+    "build": "npm run build -w shared && npm run build -w server && npm run build -w web",
+    "test": "npm run build -w shared && npm run test -w server",
+    "manual": "npm run build -w shared && npm run manual -w server",
+    "start": "npm run build -w shared && npm run start -w server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.6.3"
+  }
+}
